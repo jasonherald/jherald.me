@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>BF Interpreter</title>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/app.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/custom.css">
+    <link rel="shortcut icon" href="css/favicon.ico">
+  </head>
+  <body>
+    <div class="container-fluid wrapper" id="main-container">
+      <div class="row-fluid">
+        <h2>Enter BF Code</h2>
+      </div>
+      <div class="row-fluid">
+        <textarea id="code" rows="5" class="form-control" style="width: 95%;"></textarea>
+      </div>
+      <div class="row-fluid">
+        <a href="javascript:;" onclick="$('#result').text(bf($('#code').val()));" class="btn btn-primary">Execute</a>
+      </div>
+
+      <hr />
+
+      <h6><em>All code times out after 5 seconds</em></h6>
+      <div class="well" id="result"></div>
+    </div>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bf.js"></script>
+  </body>
+
+
+</html>
